@@ -88,7 +88,7 @@ const BrandList = () => {
       },
     },
     onRowClick: (event, row) => {
-      navigate(`/settings/brand/detail`, {
+      navigate(`/products/brand/detail`, {
         state: row.original,
       });
     },

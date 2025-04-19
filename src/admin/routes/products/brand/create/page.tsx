@@ -41,7 +41,7 @@ const CreateBrand = () => {
     try {
       const createdBrand = await createBrand({ name: values.value });
       toast.success("Brand created successfully");
-      navigate("/settings/brand");
+      navigate("/products/brand");
     } catch (error: any) {
       toast.error(
         error?.message || "Failed to create brand. Please try again."

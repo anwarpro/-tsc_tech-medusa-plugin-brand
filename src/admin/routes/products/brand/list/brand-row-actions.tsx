@@ -14,7 +14,7 @@ export const BrandRowActions = ({ brand }: BrandRowActionsProps) => {
   const handleDelete = useDeleteBrandAction(brand.id, brand.name);
 
   const handleEdit = async () => {
-    navigate("/settings/brand/edit", { state: brand });
+    navigate("/products/brand/edit", { state: brand });
   };
 
   return (

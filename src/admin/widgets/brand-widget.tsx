@@ -5,7 +5,7 @@ import { Link, useParams } from "react-router-dom";
 import { sdk } from "../utils/sdk";
 import { useQuery } from "@tanstack/react-query";
 import { HttpTypes } from "@medusajs/framework/types";
-import AddProductBrand from "../routes/settings/brand/detail/components/add-product-brand";
+import AddProductBrand from "../routes/products/brand/detail/components/add-product-brand";
 
 const BrandWidget = () => {
   const params = useParams();
@@ -34,7 +34,7 @@ const BrandWidget = () => {
           data?.product?.brand?.name ? (
             <OrganizationTag
               label={data?.product?.brand.name}
-              to={`/settings/brand`}
+              to={`/products/brand`}
             />
           ) : undefined
         }

@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { ControllerRenderProps, FieldValues } from "react-hook-form";
-import { Brand } from "../../../routes/settings/brand/list/page";
+import { Brand } from "../../../routes/products/brand/list/page";
 import { toast } from "@medusajs/ui";
 import Combobox from "../combobox/combobox";
 

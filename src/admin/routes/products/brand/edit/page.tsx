@@ -37,7 +37,7 @@ const BrandEdit = () => {
         id: state.id,
       });
       toast.success("Brand updated successfully");
-      navigate(`/settings/brand`);
+      navigate(`/products/brand`);
     } catch (error: any) {
       toast.error(
         error?.message || "Failed to update brand. Please try again."
